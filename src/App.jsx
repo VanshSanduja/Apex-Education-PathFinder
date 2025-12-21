@@ -1,23 +1,39 @@
 import "./App.css";
+import AOS from "aos";
+import "aos/dist/aos.css";
+import { useEffect } from "react";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+
+// Import components
 import Navbar from "./Components/Navbar";
-import HeroSection from './Components/HeroSection';
-import EducationalMission from "./Components/EducationalMission";
-import AcademicExcellence from "./Components/AcademicExcellence";
-import EducationCards from "./Components/EducationCards";
-import Impact from "./Components/OurImpact";
 import Footer from "./Components/Footer";
+import Home from "./Pages/Home";
+import About from "./Pages/About";
+import Services from "./Pages/Services";
+import Destinations from "./Pages/Destinations";
 
 function App() {
+  useEffect(() => {
+    AOS.init({
+      duration: 1000,
+      once: false,
+      offset: 100,
+      easing: "ease-in-out",
+    });
+  }, []);
+
   return (
-    <>
+    <Router>
       <Navbar />
-      <HeroSection />
-      <EducationalMission />
-      <AcademicExcellence />
-      <EducationCards />
-      <Impact />
+      <Routes>
+        {/* <Route path="/" element={<Home />} /> */}
+        <Route path="/Global-path-education" element={<Home />} />
+        <Route path="/about" element={<About />} />
+        <Route path="/services" element={<Services />} />
+        <Route path="/destinations" element={<Destinations />} />
+      </Routes>
       <Footer />
-    </>
+    </Router>
   );
 }
 

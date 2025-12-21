@@ -1,16 +1,17 @@
 import React, { useState } from "react";
-import { Menu, X } from "lucide-react"; // Install lucide-react or use any icon lib
+import { Menu, X } from "lucide-react"; // Install lucide-react if not already installed
+import { Link } from "react-router-dom";
 
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <nav className="bg-[#E0BE9A] shadow-md">
+    <nav className="bg-white shadow-md shadow-green-200 sticky top-0 z-10">
       <div className="max-w-7xl mx-auto px-4 py-4 md:py-3 flex items-center justify-between">
         {/* Logo */}
-        <div className="text-2xl font-thin text-black/70">
-          Global Path Education
-        </div>
+        <Link to="/Global-path-education" className="text-2xl font-thin text-green-500">
+          GlobalEd Pathway
+        </Link>
 
         {/* Hamburger icon for mobile */}
         <div className="md:hidden">
@@ -20,43 +21,43 @@ export default function Navbar() {
         </div>
 
         {/* Desktop menu */}
-        <div className="hidden md:flex gap-12 items-center font-sans">
-          <a href="#" className="text-gray-700 hover:text-white">
+        <div className="hidden md:flex gap-12 text-lg items-center text-[#4b3f2f] font-sans">
+          <Link to="/Global-path-education" className="hover:text-[#322a1f]">
             Home
-          </a>
-          <a href="#" className="text-gray-700 hover:text-white">
+          </Link>
+          <Link to="/about" className="hover:text-[#322a1f]">
             About
-          </a>
-          <a href="#" className="text-gray-700 hover:text-white">
+          </Link>
+          <Link to="/services" className="hover:text-[#322a1f]">
             Services
-          </a>
-          <a href="#" className="text-gray-700 hover:text-white">
+          </Link>
+          <Link to="/destinations" className="hover:text-[#322a1f]">
             Destinations
-          </a>
-          <button className="bg-white text-black px-4 py-2 rounded-md cursor-pointer hover:bg-[#ffd4a6] transition">
+          </Link>
+          <Link to="/contact" className="bg-white px-4 py-2 rounded-md cursor-pointer hover:bg-[#6fde9f] hover:text-white hover:shadow-md transition duration-300">
             Contact Us
-          </button>
+          </Link>
         </div>
       </div>
 
       {/* Mobile menu */}
       {isOpen && (
-        <div className="md:hidden px-4 pb-4 text-center font-sans flex flex-col gap-4">
-          <a href="#" className="text-gray-700 hover:text-white">
+        <div className="md:hidden px-4 pb-4 text-center font-sans flex flex-col text-[#4b3f2f] gap-4">
+          <Link to="/Global-path-education" className="hover:text-[#322a1f]" onClick={() => setIsOpen(false)}>
             Home
-          </a>
-          <a href="#" className="text-gray-700 hover:text-white">
+          </Link>
+          <Link to="/about" className="hover:text-[#322a1f]" onClick={() => setIsOpen(false)}>
             About
-          </a>
-          <a href="#" className="text-gray-700 hover:text-white">
+          </Link>
+          <Link to="/services" className="hover:text-[#322a1f]" onClick={() => setIsOpen(false)}>
             Services
-          </a>
-          <a href="#" className="text-gray-700 hover:text-white">
+          </Link>
+          <Link to="/destinations" className="hover:text-[#322a1f]" onClick={() => setIsOpen(false)}>
             Destinations
-          </a>
-          <button className="bg-white m-auto text-black px-4 py-2 rounded-md hover:bg-[#ffd4a6] transition w-fit">
+          </Link>
+          <Link to="/contact" className="bg-white m-auto px-4 py-2 rounded-md hover:bg-[#d3ffe6] transition w-fit" onClick={() => setIsOpen(false)}>
             Contact Us
-          </button>
+          </Link>
         </div>
       )}
     </nav>

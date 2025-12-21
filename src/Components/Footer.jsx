@@ -2,18 +2,18 @@ import React from "react";
 import {
   FaInstagram,
   FaXTwitter,
-  FaTiktok,
+  FaYoutube,
   FaFacebookF,
 } from "react-icons/fa6";
 
 function Footer() {
   return (
-    <footer className="bg-[#d2ab83] text-black px-6 md:px-16 py-12">
+    <footer className="bg-[#7be3a8] text-black px-6 md:px-16 py-12">
       <div className="flex flex-col md:flex-row justify-between gap-10">
         {/* Logo and Contact Info */}
         <div className="flex flex-col gap-4">
           <h2 className="text-2xl font-light leading-tight">
-            globalpath <br /> education
+            GlobalEd Pathway
           </h2>
           <div className="text-sm space-y-1">
             <p>123-456-7890</p>
@@ -27,21 +27,21 @@ function Footer() {
             <FaFacebookF />
             <FaInstagram />
             <FaXTwitter />
-            <FaTiktok />
+            <FaYoutube />
           </div>
         </div>
 
         {/* Policy Links */}
         <div className="text-sm flex flex-col gap-1">
-          <a href="#">Privacy Policy</a>
-          <a href="#">Accessibility Statement</a>
-          <a href="#">Terms & Conditions</a>
-          <a href="#">Refund Policy</a>
+          <a href="#">Company</a>
+          <a href="#">Testimonials</a>
+          <a href="#">Contact Us</a>
+          <a href="#">FAQ</a>
         </div>
 
         {/* Newsletter */}
         <div className="flex flex-col gap-2">
-          <p className="text-lg font-medium">All Rights Reserved</p>
+          {/* <p className="text-lg font-medium">All Rights Reserved</p> */}
           <label htmlFor="email" className="text-sm font-light">
             Email *
           </label>
@@ -61,6 +61,10 @@ function Footer() {
             Submit
           </button>
         </div>
+      </div>
+      <hr className="bg-black w-full my-8"/>
+      <div className="justify-center text-center mt-8 text-lg">
+        Copyright © 2025 <span className="font-extrabold">GlobalEd Pathway</span>. All rights reserved.
       </div>
     </footer>
   );

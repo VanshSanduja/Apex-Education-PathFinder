@@ -1,43 +1,130 @@
 import React from "react";
-import LeftImage from "../assets/Home-Welcome-1.jpg"; // Replace with your image
-import RightImage from "../assets/Home-Welcome-2.jpg"; // Replace with your image
+import LeftImage from "../assets/Chinese-2.jpeg";
+import LeftImage2 from "../assets/Hero-2-Copy.png";
+import { Globe, Award, BookOpen } from "lucide-react";
 
 export default function HeroSection() {
   return (
-    <section className="w-full h-screen flex flex-col md:flex-row">
-      {/* Left Section */}
-      <div
-        className="w-full md:w-[70%] h-[60vh] md:h-full bg-cover bg-center relative"
-        style={{ backgroundImage: `url(${LeftImage})` }}
-      >
-        {/* Show on large screens only */}
-        <div className="hidden md:block absolute bottom-20 left-10 bg-[#dbb992] bg-opacity-90 p-6 max-w-sm shadow-md rounded-lg">
-          <h2 className="text-lg font-semibold mb-2">Future Focused</h2>
-          <p className="text-sm mb-4">
-            Empowering students to reach their highest potential through
-            personalized guidance.
-          </p>
-          <button className="border rounded-xl border-black px-4 py-2 hover:bg-black hover:text-white transition">
-            Explore
-          </button>
+    <section className="w-full min-h-screen bg-gradient-to-br from-[#b0ffd2] to-white">
+      <div className="container mx-auto px-4">
+        {/* Main content section - flex column on mobile, row on large screens */}
+        <div className="flex flex-col lg:flex-row items-center py-8">
+          {/* Left Section (Image) - Full width on mobile, 60% on large screens */}
+          <div className="w-full lg:w-[60%] mb-8 lg:mb-0 lg:pr-8">
+            <div className="relative">
+              {/* Main Image */}
+              <div className="rounded-2xl overflow-hidden shadow-2xl transform transition-transform duration-500 hover:scale-105">
+                <img
+                  src={LeftImage}
+                  alt="Students celebrating graduation"
+                  className="w-full h-[60vh] md:h-[80vh] object-cover"
+                  // style={{ objectPosition: "start" }}
+                />
+              </div>
+
+              {/* Floating stats boxes */}
+              <div className="absolute top-2 md:top-8 right-2 md:right-12 bg-white/90 backdrop-blur-sm rounded-xl shadow-xl p-3 md:p-4">
+                <div className="flex items-center gap-2">
+                  <Globe className="text-green-600" size={24} />
+                  <span className="font-bold text-green-900">8+ Countries</span>
+                </div>
+              </div>
+
+              <div className="absolute bottom-2 md:bottom-12 left-2 md:left-12 bg-white/90 backdrop-blur-sm rounded-xl shadow-xl p-3 md:p-4">
+                <div className="flex items-center gap-2">
+                  <Award className="text-green-600" size={24} />
+                  <span className="font-bold text-green-900">
+                    100+ Universities
+                  </span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          {/* Right Section (Text Content) - Full width on mobile, 40% on large screens */}
+          <div className="w-full lg:w-[40%] p-4">
+            <div className="w-full">
+              <div className="mb-6 flex items-center">
+                <div className="h-1 w-12 bg-green-600 mr-4"></div>
+                <h3 className="text-green-600 font-semibold tracking-wider uppercase text-2xl">
+                  Your Education Journey
+                </h3>
+              </div>
+
+              <h1 className="text-xl font-bold text-gray-900 mb-6 leading-tight">
+                Unlock Global Education Opportunities
+              </h1>
+
+              <p className="text-base md:text-lg mb-8 leading-relaxed text-gray-700">
+                At{" "}
+                <span className="font-extrabold text-green-500">
+                  GlobalEd Pathway
+                </span>
+                , we are dedicated to transforming the educational journeys of
+                students holding Singapore qualifications. Our mission is to
+                empower you to pursue higher education in world-class
+                destinations such as Australia, United Kingdom, Canada, United
+                States, New Zealand, Malaysia and with in Singapore itself.
+                Through our expert guidance and personalized support,{" "}
+                <span className="font-bold text-red-400">
+                  we help you unlock global academic opportunities while
+                  minimizing the time and cost of earning your degree or
+                  diploma.
+                </span>
+              </p>
+
+              <div className="mb-8 bg-blue-50 rounded-xl p-4 border-l-4 border-green-600">
+                <p className="font-medium text-gray-800">
+                  We help minimize{" "}
+                  <span className="text-green-700 font-bold">
+                    time and expenses
+                  </span>{" "}
+                  while maximizing your academic potential abroad.
+                </p>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
 
-      {/* Right Section */}
-      <div
-        className="w-full md:w-[30%] h-[40vh] md:h-full bg-cover bg-center relative"
-        style={{ backgroundImage: `url(${RightImage})` }}
-      >
-        {/* Show on small screens only */}
-        <div className="block md:hidden absolute bottom-1 left-5 bg-[#dbb992] bg-opacity-90 p-4 max-w-xs shadow-md rounded-lg">
-          <h2 className="text-base font-semibold mb-1">Future Focused</h2>
-          <p className="text-sm mb-3">
-            Empowering students to reach their highest potential through
-            personalized guidance.
-          </p>
-          <button className="border rounded-xl border-black px-3 py-2 hover:bg-black hover:text-white transition text-sm">
-            Explore
-          </button>
+      {/* Bottom feature bar */}
+      <div className="container mx-auto px-4 py-6">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-4xl mx-auto">
+          <div className="bg-white rounded-xl p-4 shadow-lg flex items-center gap-4 transform transition-transform duration-300 hover:scale-105">
+            <div className="bg-blue-100 p-3 rounded-full">
+              <Globe className="text-blue-600" size={24} />
+            </div>
+            <div>
+              <h3 className="font-bold text-gray-900">Global Network</h3>
+              <p className="text-sm text-gray-600">
+                Connections with top universities
+              </p>
+            </div>
+          </div>
+
+          <div className="bg-white rounded-xl p-4 shadow-lg flex items-center gap-4 transform transition-transform duration-300 hover:scale-105">
+            <div className="bg-blue-100 p-3 rounded-full">
+              <Award className="text-blue-600" size={24} />
+            </div>
+            <div>
+              <h3 className="font-bold text-gray-900">Personalized Path</h3>
+              <p className="text-sm text-gray-600">
+                Customized education roadmaps
+              </p>
+            </div>
+          </div>
+
+          <div className="bg-white rounded-xl p-4 shadow-lg flex items-center gap-4 transform transition-transform duration-300 hover:scale-105">
+            <div className="bg-blue-100 p-3 rounded-full">
+              <BookOpen className="text-blue-600" size={24} />
+            </div>
+            <div>
+              <h3 className="font-bold text-gray-900">Expert Guidance</h3>
+              <p className="text-sm text-gray-600">
+                From application to enrollment
+              </p>
+            </div>
+          </div>
         </div>
       </div>
     </section>
