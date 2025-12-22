@@ -9,8 +9,8 @@ export default function Navbar() {
     <nav className="bg-white shadow-md shadow-green-200 sticky top-0 z-10">
       <div className="max-w-7xl mx-auto px-4 py-4 md:py-3 flex items-center justify-between">
         {/* Logo */}
-        <Link to="/Global-path-education" className="text-2xl font-thin text-green-500">
-          GlobalEd Pathway
+        <Link to="/Global-path-education" className="md:text-2xl text-xl font-thin text-green-500">
+          APEX EDUCATION PATHFINDER
         </Link>
 
         {/* Hamburger icon for mobile */}

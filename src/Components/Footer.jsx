@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import {
   FaInstagram,
   FaXTwitter,
@@ -13,14 +14,18 @@ function Footer() {
         {/* Logo and Contact Info */}
         <div className="flex flex-col gap-4">
           <h2 className="text-2xl font-light leading-tight">
-            GlobalEd Pathway
+            Apex Education Pathfinder
           </h2>
-          <div className="text-sm space-y-1">
-            <p>123-456-7890</p>
+          <div className="text-sm space-y-4">
+            <h1 className="text-lg underline">Call Us Now</h1>
+            <p>+65 -8341 4910</p>
+            <p>+65 -9004 7944</p>
+            <p>+65 -9644 2667</p>
             <p>info@mysite.com</p>
+            <h1 className="text-lg underline">Address Information</h1>
             <p>
-              500 Terry Francine Street,
-              <br /> 6th Floor, San Francisco, CA 94158
+              223 MOUNTBATTEN ROAD,
+              <br />  #03-16, 223, MOUNTBATTEN, SINGAPORE 398008
             </p>
           </div>
           <div className="flex gap-4 mt-2 text-lg">
@@ -32,10 +37,10 @@ function Footer() {
         </div>
 
         {/* Policy Links */}
-        <div className="text-sm flex flex-col gap-1">
+        <div className="text-md flex flex-col gap-1">
           <a href="#">Company</a>
           <a href="#">Testimonials</a>
-          <a href="#">Contact Us</a>
+          <Link to="/contact#contact-header">Contact Us</Link>
           <a href="#">FAQ</a>
         </div>
 
@@ -62,9 +67,11 @@ function Footer() {
           </button>
         </div>
       </div>
-      <hr className="bg-black w-full my-8"/>
+      <hr className="bg-black w-full my-8" />
       <div className="justify-center text-center mt-8 text-lg">
-        Copyright © 2025 <span className="font-extrabold">GlobalEd Pathway</span>. All rights reserved.
+        Copyright © 2025{" "}
+        <span className="font-extrabold">GlobalEd Pathway</span>. All rights
+        reserved.
       </div>
     </footer>
   );
