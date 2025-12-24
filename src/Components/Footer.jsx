@@ -9,7 +9,7 @@ import {
 
 function Footer() {
   return (
-    <footer className="bg-[#7be3a8] text-black px-6 md:px-16 py-12">
+    <footer className="bg-[#e37b7b] text-blue-950 px-6 md:px-16 py-12">
       <div className="flex flex-col md:flex-row justify-between gap-10">
         {/* Logo and Contact Info */}
         <div className="flex flex-col gap-4">

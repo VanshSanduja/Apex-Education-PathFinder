@@ -1,16 +1,17 @@
 import React, { useState } from "react";
 import { Menu, X } from "lucide-react"; // Install lucide-react if not already installed
 import { Link } from "react-router-dom";
+import Logo from "../assets/apex logo png.png";
 
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <nav className="bg-white shadow-md shadow-green-200 sticky top-0 z-10">
+    <nav className="bg-white shadow-md shadow-red-400 sticky top-0 z-10">
       <div className="max-w-7xl mx-auto px-4 py-4 md:py-3 flex items-center justify-between">
         {/* Logo */}
-        <Link to="/Global-path-education" className="md:text-2xl text-xl font-thin text-green-500">
-          APEX EDUCATION PATHFINDER
+        <Link to="/Global-path-education" className="md:text-2xl text-xl font-thin text-red-500">
+          <img src={Logo} alt="company-logo" className=" h-10 md:h-14 w-full" />
         </Link>
 
         {/* Hamburger icon for mobile */}
@@ -34,7 +35,7 @@ export default function Navbar() {
           <Link to="/destinations" className="hover:text-[#322a1f]">
             Destinations
           </Link>
-          <Link to="/contact" className="bg-white px-4 py-2 rounded-md cursor-pointer hover:bg-[#6fde9f] hover:text-white hover:shadow-md transition duration-300">
+          <Link to="/contact" className="bg-white px-4 py-2 rounded-md cursor-pointer hover:bg-[#de6f6f] hover:text-white hover:shadow-md transition duration-300">
             Contact Us
           </Link>
         </div>

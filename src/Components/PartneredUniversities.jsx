@@ -10,7 +10,7 @@ export default function UniversityPartners() {
   return (
     <section className="w-full py-10 bg-white text-center">
       <h2 className="text-2xl md:text-3xl font-semibold mb-8 text-[#1a1a1a]">
-        <span className="bg-green-200 px-2 rounded font-bold">Partnered</span>{" "}
+        <span className="bg-red-200 px-2 rounded font-bold">Partnered</span>{" "}
         with Global universities for unparalleled academic support.
       </h2>
 

@@ -93,7 +93,7 @@ const DestinationsPage = () => {
   return (
     <div className="min-h-screen bg-gradient-to-br from-blue-50 to-indigo-100">
       {/* Hero Section */}
-      <div className="bg-gradient-to-r from-green-500 to-emerald-600 text-white py-20 px-4">
+      <div className="bg-gradient-to-r from-red-500 to-emerald-600 text-white py-20 px-4">
         <div className="max-w-6xl mx-auto text-center">
           <h1 className="text-5xl font-bold mb-6">
             Global Education Destinations
@@ -178,7 +178,7 @@ const DestinationsPage = () => {
         </div>
 
         {/* CTA Section */}
-        <div className="bg-gradient-to-r from-green-500 to-emerald-600 rounded-xl shadow-2xl p-12 text-center text-white">
+        <div className="bg-gradient-to-r from-red-500 to-emerald-600 rounded-xl shadow-2xl p-12 text-center text-white">
           <h2 className="text-4xl font-bold mb-4">
             Ready to Start Your Global Education Journey?
           </h2>
@@ -188,7 +188,7 @@ const DestinationsPage = () => {
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Link to="/contact/#contact-header">
-              <button className="bg-white text-green-600 px-8 py-3 rounded-lg font-semibold hover:bg-gray-100 transition-colors duration-300">
+              <button className="bg-white text-red-600 px-8 py-3 rounded-lg font-semibold hover:bg-gray-100 transition-colors duration-300">
                 Schedule a Consultation
               </button>
             </Link>

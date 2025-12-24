@@ -37,7 +37,7 @@ const WhyChooseUs = () => {
   return (
     <section
       data-aos="fade-up"
-      className="bg-gradient-to-br from-[#b0ffd2] to-white p-8 rounded-2xl shadow-lg mx-4 my-10"
+      className="bg-gradient-to-br from-[#ffb0b0] to-white p-8 rounded-2xl shadow-lg mx-4 my-10"
     >
       <h2 className="text-3xl font-bold text-gray-800 mb-8 text-center">
         Why Choose Us?

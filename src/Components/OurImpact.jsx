@@ -10,7 +10,7 @@ function ImpactStats() {
   ];
 
   return (
-    <div className="bg-[#e7fff1] w-full py-16 px-4 md:px-24">
+    <div className="bg-[#ffe7e7] w-full py-16 px-4 md:px-24">
       <h2 className="text-3xl font-semibold mb-4">Our Impact</h2>
       <p className="text-lg text-gray-800 mb-12 max-w-3xl">
         Over the years, we have helped hundreds of students achieve their academic dreams and

@@ -30,12 +30,12 @@ export default function ContactPage() {
   return (
     <div className="min-h-screen bg-white">
       {/* Hero Section */}
-      <div className="bg-gradient-to-r from-green-500 to-emerald-600 text-white py-20">
+      <div className="bg-gradient-to-r from-red-500 to-emerald-600 text-white py-20">
         <div id="contact-header" className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <h1 className="text-4xl md:text-5xl font-bold text-center mb-4">
             Contact us
           </h1>
-          <div className="flex items-center justify-center gap-2 text-green-50">
+          <div className="flex items-center justify-center gap-2 text-red-50">
             <span>Home</span>
             <span>•</span>
             <span>Contact us</span>
@@ -51,18 +51,18 @@ export default function ContactPage() {
             <h3 className="text-xl font-bold text-gray-900 mb-4">Karnal Office:</h3>
             <div className="space-y-3 text-gray-600">
               <div className="flex items-start gap-2">
-                <MapPin size={18} className="text-green-600 mt-1 flex-shrink-0" />
+                <MapPin size={18} className="text-red-600 mt-1 flex-shrink-0" />
                 <p className="text-sm">SCO 385, First Floor Mugal Canal, Near Dr. Kuldeep, Karnal</p>
               </div>
               <div className="flex items-center gap-2">
-                <Phone size={18} className="text-green-600 flex-shrink-0" />
+                <Phone size={18} className="text-red-600 flex-shrink-0" />
                 <div className="text-sm">
                   <p>+91 0184-4024008, 4004981</p>
-                  <p className="font-semibold text-green-600">+91 96756-96756</p>
+                  <p className="font-semibold text-red-600">+91 96756-96756</p>
                 </div>
               </div>
               <div className="flex items-center gap-2">
-                <Mail size={18} className="text-green-600 flex-shrink-0" />
+                <Mail size={18} className="text-red-600 flex-shrink-0" />
                 <p className="text-sm">charlie@charliegroup.in</p>
               </div>
             </div>
@@ -73,18 +73,18 @@ export default function ContactPage() {
             <h3 className="text-xl font-bold text-gray-900 mb-4">Panipat Office:</h3>
             <div className="space-y-3 text-gray-600">
               <div className="flex items-start gap-2">
-                <MapPin size={18} className="text-green-600 mt-1 flex-shrink-0" />
+                <MapPin size={18} className="text-red-600 mt-1 flex-shrink-0" />
                 <p className="text-sm">76-R Model Town, Opposite Sanatan Dharam Mandir, Panipat</p>
               </div>
               <div className="flex items-center gap-2">
-                <Phone size={18} className="text-green-600 flex-shrink-0" />
+                <Phone size={18} className="text-red-600 flex-shrink-0" />
                 <div className="text-sm">
                   <p>+91 0180-3594280, 4084347</p>
-                  <p className="font-semibold text-green-600">+91 96756-96756</p>
+                  <p className="font-semibold text-red-600">+91 96756-96756</p>
                 </div>
               </div>
               <div className="flex items-center gap-2">
-                <Mail size={18} className="text-green-600 flex-shrink-0" />
+                <Mail size={18} className="text-red-600 flex-shrink-0" />
                 <p className="text-sm">pnp@charliegroup.in</p>
               </div>
             </div>
@@ -95,11 +95,11 @@ export default function ContactPage() {
             <h3 className="text-xl font-bold text-gray-900 mb-4">Singapore Office:</h3>
             <div className="space-y-3 text-gray-600">
               <div className="flex items-start gap-2">
-                <MapPin size={18} className="text-green-600 mt-1 flex-shrink-0" />
+                <MapPin size={18} className="text-red-600 mt-1 flex-shrink-0" />
                 <p className="text-sm">223 MOUNTBATTEN ROAD, #03-16, 223, MOUNTBATTEN, SINGAPORE 398008</p>
               </div>
               <div className="flex items-center gap-2">
-                <Mail size={18} className="text-green-600 flex-shrink-0" />
+                <Mail size={18} className="text-red-600 flex-shrink-0" />
                 <p className="text-sm"> singapore@apexeducation.sg</p>
               </div>
             </div>
@@ -124,7 +124,7 @@ export default function ContactPage() {
           {/* Contact Form */}
           <div className="order-1 md:order-2 shadow-2xl shadow-gray-300 p-8 rounded-2xl">
             <div className="mb-6 text-center">
-              <p className="text-green-600 font-semibold mb-2">Any query?</p>
+              <p className="text-red-600 font-semibold mb-2">Any query?</p>
               <h2 className="text-3xl font-bold text-gray-900 mb-2">
                 Get in touch with us!
               </h2>
@@ -134,8 +134,8 @@ export default function ContactPage() {
             </div>
 
             {submitted && (
-              <div className="mb-6 p-4 bg-green-50 border border-green-200 rounded-lg">
-                <p className="text-green-800 font-medium">Thank you! Your message has been sent.</p>
+              <div className="mb-6 p-4 bg-red-50 border border-red-200 rounded-lg">
+                <p className="text-red-800 font-medium">Thank you! Your message has been sent.</p>
               </div>
             )}
 
@@ -147,7 +147,7 @@ export default function ContactPage() {
                   value={formData.name}
                   onChange={handleChange}
                   placeholder="Your Name *"
-                  className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-green-500 focus:border-transparent transition"
+                  className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-red-500 focus:border-transparent transition"
                 />
               </div>
 
@@ -158,7 +158,7 @@ export default function ContactPage() {
                   value={formData.email}
                   onChange={handleChange}
                   placeholder="Your Email *"
-                  className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-green-500 focus:border-transparent transition"
+                  className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-red-500 focus:border-transparent transition"
                 />
               </div>
 
@@ -169,7 +169,7 @@ export default function ContactPage() {
                   value={formData.phone}
                   onChange={handleChange}
                   placeholder="Your Phone *"
-                  className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-green-500 focus:border-transparent transition"
+                  className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-red-500 focus:border-transparent transition"
                 />
               </div>
 
@@ -180,13 +180,13 @@ export default function ContactPage() {
                   onChange={handleChange}
                   rows="5"
                   placeholder="Your Message *"
-                  className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-green-500 focus:border-transparent transition resize-none"
+                  className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-red-500 focus:border-transparent transition resize-none"
                 />
               </div>
 
               <button
                 onClick={handleSubmit}
-                className="bg-gradient-to-r from-green-500 to-emerald-600 text-white py-3 px-8 rounded-lg font-medium hover:from-green-600 hover:to-emerald-700 transition flex items-center gap-2"
+                className="bg-gradient-to-r from-red-500 to-emerald-600 text-white py-3 px-8 rounded-lg font-medium hover:from-red-600 hover:to-emerald-700 transition flex items-center gap-2"
               >
                 <Send size={20} />
                 Send Message
