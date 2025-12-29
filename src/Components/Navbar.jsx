@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { Menu, X } from "lucide-react"; // Install lucide-react if not already installed
 import { Link } from "react-router-dom";
-import Logo from "../assets/apex logo png.png";
+import Logo from "../assets/Final-logo.png";
 
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);

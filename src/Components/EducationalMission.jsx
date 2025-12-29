@@ -61,8 +61,8 @@ function EducationalMission() {
             </h1>
             
             <div className="bg-white/70 backdrop-blur-sm rounded-xl p-6 shadow-lg mb-8">
-              <p className="text-base font-bold md:text-lg text-gray-700 leading-relaxed">
-                We specialize in assisting students who have completed Singapore based qualifications such as diplomas, advanced diplomas, or other recognized credentials and wish to advance their studies abroad or locally. Our team of experienced education consultants works closely with you to identify the best universities and programs that align with your academic background, career aspirations, and personal goals. Whether you dream of studying at a prestigious institution in Australia, United Kingdom, Canada, United States, New Zealand, Malaysia or even within Singapore, we make the transition smooth and stress-free.
+              <p className="text-base md:text-lg text-gray-700 leading-relaxed">
+                We specialize in assisting students who have completed <span className='text-red-500'>Singapore based qualifications</span> such as diplomas, advanced diplomas, or other recognized credentials and wish to advance their studies abroad or locally. Our team of experienced education consultants works closely with you to identify the best universities and programs that align with your academic background, career aspirations, and personal goals. Whether you dream of studying at a prestigious institution in Australia, United Kingdom, Canada, United States, New Zealand, Malaysia or even within Singapore, we make the transition smooth and stress-free.
               </p>
             </div>
             
@@ -87,7 +87,7 @@ function EducationalMission() {
           <div className="w-full lg:w-[40%] relative">
             <div className="rounded-3xl overflow-hidden shadow-2xl">
               <img
-                className="w-full h-[65vh] md:h-[90vh]"
+                className="w-full h-[80vh] md:h-[90vh]"
                 src={AboutImage2}
                 alt="Students preparing for university"
               />
@@ -105,7 +105,7 @@ function EducationalMission() {
             </h2>
             
             <div className="bg-white/70 backdrop-blur-sm rounded-xl p-6 shadow-lg mb-8">
-            <p className="text-base font-bold md:text-lg text-gray-700 leading-relaxed mb-6">
+            <p className="text-base md:text-lg text-gray-700 leading-relaxed mb-6">
               One of our key offerings is leveraging the Recognition of Prior Learning (RPL) credit system to accelerate your academic journey. The RPL system evaluates your prior qualifications, skills, and experiences to grant course credits, significantly reducing the duration of your degree or diploma program. This means you can achieve your educational goals faster, save on tuition fees, and enter the workforce sooner. Our experts navigate the complexities of RPL assessments, ensuring your credits are maximized and recognized by leading institutions worldwide.
             </p>
             </div>
@@ -124,7 +124,7 @@ function EducationalMission() {
             </div>
             
             <div className="bg-gradient-to-br from-[#ffb0b0] to-white rounded-xl p-6 text-gray-700 shadow-lg">
-              <p className="font-bold text-xl">
+              <p className="text-xl">
                 We work hand in hand with various institutions in Singapore and universities worldwide to select the best programmes to meet your needs.
               </p>
               <button className="mt-4 cursor-pointer bg-white text-red-500 px-6 py-2 rounded-lg font-bold hover:bg-blue-50 transition duration-300">

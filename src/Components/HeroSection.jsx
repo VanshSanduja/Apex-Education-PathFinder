@@ -58,20 +58,18 @@ export default function HeroSection() {
 
               <p className="text-base md:text-lg mb-8 leading-relaxed text-gray-700">
                 At{" "}
-                <span className="font-extrabold text-red-500">
+                <span>
                   Apex Education Pathfinder
                 </span>
                 , we are dedicated to transforming the educational journeys of
-                students holding Singapore qualifications. Our mission is to
+                students holding <span className="text-red-500">Singapore qualifications</span>. Our mission is to
                 empower you to pursue higher education in world-class
                 destinations such as Australia, United Kingdom, Canada, United
                 States, New Zealand, Malaysia and with in Singapore itself.
                 Through our expert guidance and personalized support,{" "}
-                <span className="font-bold">
                   we help you unlock global academic opportunities while
                   minimizing the time and cost of earning your degree or
                   diploma.
-                </span>
               </p>
 
               <div className="mb-8 bg-blue-50 rounded-xl p-4 border-l-4 border-red-500">

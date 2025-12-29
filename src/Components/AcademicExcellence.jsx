@@ -66,9 +66,7 @@ function AcademicExcellence() {
               Embarking on an international or local education journey is a
               life changing decision, and we’re here to make it rewarding and
               accessible. With{" "}
-              <span className="font-bold text-red-500">
                 Apex Education Pathfinder
-              </span>
               , you gain a trusted partner committed to your success. Let us
               help you turn your Singapore qualifications into a gateway for
               global opportunities, equipping you with the credentials and

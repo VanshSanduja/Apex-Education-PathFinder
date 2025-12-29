@@ -113,8 +113,8 @@ const DestinationsPage = () => {
             Global University Pathways
           </h2>
           <p className="text-lg text-gray-600">
-            Through our collaboration with International Management and Sports
-            College in Singapore, we will help students achieve their dreams of
+            Through our collaboration with <span className="text-red-500">International Management and Sports
+            College in Singapore</span>, we will help students achieve their dreams of
             progressing to universities around the world:
           </p>
         </div>
