@@ -11,7 +11,7 @@ export default function Navbar() {
       <div className="max-w-7xl mx-auto px-4 py-4 md:py-3 flex items-center justify-between">
         {/* Logo */}
         <Link
-          to="/Global-path-education"
+          to="/"
           onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
           className="md:text-2xl text-xl font-thin text-red-500"
         >
@@ -69,37 +69,52 @@ export default function Navbar() {
       {isOpen && (
         <div className="md:hidden px-4 pb-4 text-center font-sans flex flex-col text-[#4b3f2f] gap-4">
           <Link
-            to="/Global-path-education"
+            to="/"
             className="hover:text-[#322a1f]"
-            onClick={() => setIsOpen(false)}
+            onClick={() => {
+              setIsOpen(false);
+              window.scrollTo({ top: 0, behavior: "smooth" });
+            }}
           >
             Home
           </Link>
           <Link
             to="/about"
             className="hover:text-[#322a1f]"
-            onClick={() => setIsOpen(false)}
+            onClick={() => {
+              setIsOpen(false);
+              window.scrollTo({ top: 0, behavior: "smooth" });
+            }}
           >
             About
           </Link>
           <Link
             to="/services"
             className="hover:text-[#322a1f]"
-            onClick={() => setIsOpen(false)}
+            onClick={() => {
+              setIsOpen(false);
+              window.scrollTo({ top: 0, behavior: "smooth" });
+            }}
           >
             Services
           </Link>
           <Link
             to="/destinations"
             className="hover:text-[#322a1f]"
-            onClick={() => setIsOpen(false)}
+            onClick={() => {
+              setIsOpen(false);
+              window.scrollTo({ top: 0, behavior: "smooth" });
+            }}
           >
             Destinations
           </Link>
           <Link
             to="/contact"
             className="bg-white m-auto px-4 py-2 rounded-md hover:bg-[#d3ffe6] transition w-fit"
-            onClick={() => setIsOpen(false)}
+            onClick={() => {
+              setIsOpen(false);
+              window.scrollTo({ top: 0, behavior: "smooth" });
+            }}
           >
             Contact Us
           </Link>
